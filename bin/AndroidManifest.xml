@@ -1,0 +1,77 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.badlogic.androidgames"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme" android:debuggable="true">
+        <activity
+            android:name=".AndroidBasicsStarter"
+            android:label="@string/title_activity_android_basics_starter" >
+	       <intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+	            
+        </activity>
+        <activity android:name=".MultiTouchTest" android:label="Multi Touch Test">
+        </activity>
+        
+        <activity android:name=".SingleTouchTest" android:label="Single Touch Test">
+        </activity>
+        
+        <activity android:name=".LifeCycleTest" android:label="Life Cycle Test">
+        </activity>
+    
+        <activity android:name=".KeyTest" android:label="Key Test">
+        </activity>
+        
+        <activity android:name=".AccelerometerTest" android:label="Accelerometer Test">
+        </activity>
+        
+        <activity android:name=".AssetsTest" android:label="Assets Test">
+        </activity>
+        
+        <activity android:name=".ExternalStorageTest" android:label="External StorageT est">
+        </activity>
+        
+        <activity android:name=".SoundPoolTest" android:label="Sound Pool Test">
+        </activity>
+        
+        <activity android:name=".MediaPlayerTest" android:label="SMedia Player Test">
+        </activity>
+        
+        <activity android:name=".FullScreenTest" android:label="Full Screen Test" android:screenOrientation="portrait">
+        </activity>
+        
+        <activity android:name=".RenderViewTest" android:label="Render View Test">
+        </activity>
+        
+        <activity android:name=".ShapeTest" android:label="Shape Test">
+        </activity>
+        
+        <activity android:name=".BitmapTest" android:label="Bitmap Test">
+        </activity>
+        
+        <activity android:name=".FontTest" android:label="Font Test">
+        </activity>
+        
+        <activity android:name=".SurfaceViewTest" android:label="Surface View Test">
+        </activity>
+        <activity android:permission="android.permission.WAKE_LOCK" android:name=".glbasics.FirstTriangleTest"></activity>
+        <activity android:name=".glbasics.BobTest"></activity>
+        <activity android:name=".glbasics.BobTest1"></activity>
+        <activity android:name=".gl3d.Vertices3Test" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity android:name=".gl3d.ZBlendingTest"></activity>
+        <activity android:name="DigiJam"></activity>
+        
+    </application>
+
+</manifest>
